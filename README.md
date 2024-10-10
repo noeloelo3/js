@@ -6,8 +6,10 @@ if (liczba % 2 == 0)
     window.alert("liczba parzysta")
 else
     window.alert("nieparzysta")
+```
 
-
+# przedzial
+```js
 const pyt = window.prompt("liczba dawaj")
 const liczba = Number(pyt)
 if (liczba > 5 && liczba < 20)
