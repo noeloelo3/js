@@ -1,4 +1,4 @@
-# przystosc
+# parzystosc
 ```js
 const pyt = window.prompt("podaj liczbe")
 const liczba = Number(pyt)
