@@ -1,4 +1,4 @@
-#przystosc
+# przystosc
 ```js
 const pyt = window.prompt("podaj liczbe")
 const liczba = Number(pyt)
@@ -19,7 +19,7 @@ else
 
 
 
-#kalkulator1
+# kalkulator1
 ```js
 const pyt1 = window.prompt("piersza liczba")
 const pyt2 = window.prompt("druga liczba")
@@ -48,7 +48,7 @@ switch (znak) {
 
 
 
-#nadpisanie diva
+# nadpisanie diva
 ```js
 const pier = document.querySelector('#jeden')
 const nap = window.prompt("napisz cos ok")
@@ -63,7 +63,7 @@ pier.innerHTML = `<span>${nap}</span>`
 
 
 
-#kalkulator divovy
+# kalkulator divovy
 ```js
 const pier = document.querySelector('#jeden')
 const pyt1 = window.prompt("piersza liczba")
@@ -101,7 +101,7 @@ switch (znak) {
 
 
 
-#zmiana koloru
+# zmiana koloru
 ```js
 window.alert("kolorki: red, green, blue, yellow, purple")
 const kolor = window.prompt("kolorek")
@@ -136,7 +136,7 @@ switch (kolor) {
 
 
 
-#licznik
+# licznik
 ```js
 let liczba = 0
 const pls = document.querySelector('#plus')
@@ -181,7 +181,7 @@ rst.addEventListener('click', reset)
 
 
 
-#zgodnosc haselek
+# zgodnosc haselek
 ```js
 const h1 = document.querySelector('#has1')
 const h2 = document.querySelector('#has2')
