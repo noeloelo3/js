@@ -184,22 +184,50 @@ rst.addEventListener('click', reset)
 
 
 # zgodnosc haselek
+```html
+<form>
+        <input id="login" type="text">
+        <span id="span1"></span>
+        <input id="has1" type="password">
+        <span id="span2" ></span>
+        <input id="has2" type="password">
+        <span id="span3" ></span>
+```
 ```js
-const h1 = document.querySelector('#has1')
-const h2 = document.querySelector('#has2')
-const span = document.querySelector('span')
-
-function jaja() {
-    const c = h1.value === h2.value
-    if (c) {
-        span.innerHTML = "zgadza sie"
-        span.style.color = "green"
-    }
-    else {
-        span.innerHTML = "hasla roznia sie"
-        span.style.color = "red"
-    }
-}
-
-h2.addEventListener('input', jaja)
+        <script>
+            const span1 = document.querySelector('#span1')
+            const span2 = document.querySelector('#span2')
+            const span3 = document.querySelector('#span3')
+            document.getElementById('login').addEventListener('input', function() {
+                const login = document.getElementById('login').value;
+                if ( login === ''){
+                    span1.innerHTML = "pusty login"
+                    span1.style.color = 'red'
+                }else span1.innerHTML = ""
+                   
+            
+    
+            })          
+            document.getElementById('has1').addEventListener('input', function() {
+                const has1 = document.getElementById('has1').value;
+                if ( has1 === ''){
+                    span2.innerHTML = "pusty haslo"
+                    span2.style.color = 'red'
+                }else if (has1.length < 8){
+                    span2.innerHTML = "malo znakow"
+                    span2.style.color = 'red'
+                }
+                else span2.innerHTML = ""
+            })          
+            document.getElementById('has2').addEventListener('input', function() {
+                const has1 = document.getElementById('has1').value;
+                const has2 = document.getElementById('has2').value;
+                if ( has1 !== has2 ){
+                    span3.innerHTML = "nie zgadza sie"
+                    span3.style.color = 'red'
+                }else span3.innerHTML = ""
+            })
+        </script>
+    </form>
  ```
+
