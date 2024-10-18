@@ -195,7 +195,6 @@ rst.addEventListener('click', reset)
 </form>
 ```
 ```js
-        <script>
             const span1 = document.querySelector('#span1')
             const span2 = document.querySelector('#span2')
             const span3 = document.querySelector('#span3')
@@ -228,6 +227,5 @@ rst.addEventListener('click', reset)
                     span3.style.color = 'red'
                 }else span3.innerHTML = ""
             })
-        </script>
  ```
 
