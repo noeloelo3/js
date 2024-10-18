@@ -192,6 +192,7 @@ rst.addEventListener('click', reset)
         <span id="span2" ></span>
         <input id="has2" type="password">
         <span id="span3" ></span>
+</form>
 ```
 ```js
         <script>
@@ -228,6 +229,5 @@ rst.addEventListener('click', reset)
                 }else span3.innerHTML = ""
             })
         </script>
-    </form>
  ```
 
